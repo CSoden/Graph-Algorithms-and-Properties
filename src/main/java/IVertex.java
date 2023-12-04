@@ -3,10 +3,10 @@ package main.java;
 public interface IVertex {
 
     // Returns the colour of the current vertex. Used for vertex/total graph colourings
-    public int getColour();
+    public int[] getColour();
 
     // Given a colour, given as a integer (or potential 3d RGB vector in future (for visualisation)), sets the colour of that given vertex to the color
-    public void setColour(int newColour);
+    public void setColour(int[] newColour);
 
     // Returns the 'name' or label of the vertex
     public String getName();
@@ -31,4 +31,10 @@ public interface IVertex {
 
     // Given a vertex v, returns where the vertex is adjacent to v
     public Boolean isAdjacentTo(Vertex v);
+
+    // Returns the weight of a vertex
+    public int getWeight();
+
+    // Sets the weight of the vertex
+    public void setWeight(int newWeight);
 }

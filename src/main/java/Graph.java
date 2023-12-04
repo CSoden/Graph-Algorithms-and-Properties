@@ -1,5 +1,5 @@
 package main.java;
 
-public class Graph {
+public class Graph implements IGraph{
     
 }
