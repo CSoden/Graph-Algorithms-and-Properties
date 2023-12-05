@@ -3,10 +3,10 @@ package main.java;
 public interface IEdge {
     
     // Returns the colour of the edge
-    public int getColour();
+    public int[] getColour();
 
-    // Given a new colour c, sets the colour of the edge
-    public void setColour(int colour);
+    // Sets the colour of the edge
+    public void setColour(int[] newColour);
 
     // Returns the 'name' of the edge
     public String getName();
@@ -15,7 +15,7 @@ public interface IEdge {
     public void setName(String name);
 
     // Returns an array containing the two endpoints of the edge
-    public Vertex[] getEndpoints();
+    public Vertex[] getEndPoints();
 
     // Returns the weight of the edge
     public int getWeight();

@@ -59,7 +59,7 @@ public class Vertex implements IVertex{
     {
         this.edges.add(newEdge);
         this.degree += 1;
-        Vertex[] toAdd = newEdge.getEndpoints();
+        Vertex[] toAdd = newEdge.getEndPoints();
         for (int i=0; i<toAdd.length; i++)
         {
             if (!toAdd[i].equals(this))
